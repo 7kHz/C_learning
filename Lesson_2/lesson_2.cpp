@@ -4,11 +4,6 @@
 using namespace std;
 int main()
 /* {
-int n = {10};
-char x = {300};
-cout << x << endl;
-} */
-/* {
     int x;
     scanf("%o", &x);
     printf("--------------------------------\n");
@@ -78,7 +73,7 @@ cout << x << endl;
     printf("%7.2f\n%7.2f\n%7.2f\n", l1, l2, l3);
     return 0;
 } */
-{
+/* {
     char message, key;
     int mask;
     key = '$';
@@ -92,4 +87,161 @@ cout << x << endl;
         cout << u8"Oshidaem";
     }
     return 0;
+} */
+/* {
+    int a, b, c;
+    cin >> a >> b;
+    if (b!= 0) {
+        c = a / b;
+        cout << c;
+    }
+    else {
+        cout << u8"Devizion by zerro!";
+    }
+    return 0;
+} */
+/* {
+    int a;
+    cin >> a;
+    if (a % 2 == 0) {
+        cout << "YES";
+    }
+    else {
+        cout << "NO";
+    }
+    
+} */
+/* {
+    double x, y;
+    cin >> x;
+    y = 2 * pow(x, 2);
+    if (x >= - 2) {
+        y = sin(x);
+    }
+    if (x >= 5) {
+        y = pow(log10(2 * x), 2);
+    }
+    cout << fixed << setprecision(2) << y << endl;
+} */
+/* {
+    int num;
+    cin >> num;
+    if (num < 100000 || num > 999999) {
+        cout << "ERROR" << endl;
+    }
+    else {
+    int digit1 = num % 10;
+    num /= 10;
+    int digit2 = num % 10;
+    num /= 10;
+    int digit3 = num % 10;
+    num /= 10;
+    int digit4 = num % 10;
+    num /= 10;
+    int digit5 = num % 10;
+    num /= 10;
+    int digit6 = num % 10;
+    if (digit1 + digit2 + digit3 == digit4 + digit5 + digit6) {
+        cout << "YES" << endl;
+    }
+    else {
+        cout << "NO" << endl;
+    }
+}
+} */
+/* {
+    double distance1, distance2, weight, litres1, litres2, litres3, expense;
+    cin >> distance1 >> distance2 >> weight;
+    if (weight > 2000) {
+        cout << "ERROR" <<endl;
+    }
+    else {
+        if (weight <= 500) {
+            expense = 1;
+        }
+        else if (weight > 500 && weight <= 1000) {
+            expense = 4;
+        }
+        else if (weight > 1000 && weight <= 1500) {
+            expense = 7;
+        }
+        else if (weight > 1500 && weight <= 2000) {
+            expense = 9;
+        }
+        litres1 = distance1 * expense;
+        if (litres1 > 300) {
+            cout << "ERROR" << endl;
+        }
+        else {
+        litres2 = distance2 * expense;
+        if (litres2 > 300) {
+            cout << "ERROR" << endl;
+        }
+        else {
+            litres3 = litres2 - (300 - litres1);
+        if (litres3 < 0) {
+            litres3 = 0;
+        }
+        cout << fixed << setprecision(2) << litres3 << endl;
+    }
+    }
+    }
+} */
+/* {
+    int a, b, c, d, e, max;
+    cin >> a >> b >> c >> d >> e;
+    max = a;
+    if (max > b) {
+        max = b;
+    }
+    if (max > c) {
+        max = c;
+    }
+    if (max > d) {
+        max = d;
+    }
+    if (max > e) {
+        max = e;
+    }
+    cout << max << endl;
+} */
+/* {
+int num;
+cin >> num;
+switch (num)
+{
+case 12: case 1: case 2:
+    cout << u8"Зима" << endl; break;
+case 3: case 4: case 5:
+    cout << "Весна" << endl; break;
+case 6: case 7: case 8:
+    cout << "Лето" << endl; break;
+case 9: case 10: case 11:
+    cout << "Осень" << endl; break;
+default:
+    cout << "Ошибка" << endl;
+    break;
+}
+} */
+/* {
+int num;
+cin >> num;
+switch (num)
+{
+
+case 1 ... 5: cout << "Working day" << endl; break;
+case 6: cout << "Saturday" << endl; break;
+case 7: cout << "Sunday" << endl; break;
+default: cout << "Error" << endl;
+}
+} */
+{
+    char letter;
+    cin >> letter;
+    switch(letter) {
+        case 'J': cout << "январь\n"; break;
+        case 'F': cout << "февраль\n"; break;
+        case 'D': cout << "декабрь\n"; break;
+        default: cout << "Ошибка\n";
+    }
 }
